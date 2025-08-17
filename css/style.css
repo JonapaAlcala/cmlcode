@@ -55,8 +55,8 @@ h5,
 h6 {
      letter-spacing: 0;
      font-weight: normal;
-     position: relative;
-     padding: 0 0 10px 0;
+     position: center;
+     padding: 0 0 10px 20px;
      font-weight: normal;
      line-height: normal;
      color: #111111;
@@ -302,16 +302,16 @@ button {
 }
 
 a.readmore_bt {
-     color: #fff;
+     color: #08751e;
      font-weight: 300;
      text-decoration: underline !important;
 }
 
 .main_bt:hover,
 .main_bt:focus {
-     background: #000;
+     background: #a42626;
      border: solid #000 2px;
-     color: #fff;
+     color: #982e2e;
 }
 
 
@@ -452,7 +452,7 @@ a.readmore_bt {
 }
 
 .logo {
-     width: 40px;
+     width: 60px;
      height: auto;
      float: left;
      position: relative;
@@ -1608,7 +1608,7 @@ input[type="radio"] .styled:checked+label::after {
      background: #308409;
 }
 .img-box figure {
-     width: 75%;
+     width: 80%;
      text-align: right;
      margin: 10px;
      
@@ -1618,7 +1618,7 @@ input[type="radio"] .styled:checked+label::after {
      box-shadow: #308409 0px 0px 0px 0px;
 }
 .service {
-     padding: 90px 0px;
+     padding: 15px 0px;
 }
 .titlepage {
      text-align: center;
@@ -1628,7 +1628,7 @@ input[type="radio"] .styled:checked+label::after {
      padding: 0px 0px 36px 0px;
      font-size: 50px;
      font-weight: bold;
-     color: #050303;
+     color: #005101;
      line-height: 50px;
      position: relative;
      margin-bottom: 20px;
@@ -1651,16 +1651,24 @@ input[type="radio"] .styled:checked+label::after {
      display: block;
 }
 .service .service-box {
-     background-color: #fff;
-     box-shadow: #dcd8d8 0px 1px 3px 0px;
+     background-color: rgb(249, 248, 242);
+     box-shadow: rgba(0, 60, 40, 0.491) 1px 1px 5px 5px;
      margin-bottom: 30px;
+     border-radius: 60px;
+
 }
 .service .service-box figure {
      margin: 0px;
 }
 .service .service-box figure img {
-     width: 100%;
+     width: 90%;     
+     padding: 15px 15px;
+     border-radius: 50px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
 }
+
 .service .service-box h3 {
      font-size: 30px;
      line-height: 36px;
@@ -1671,11 +1679,12 @@ input[type="radio"] .styled:checked+label::after {
 .service .service-box p {
      font-size: 17px;
      line-height: 30px;
+     font-weight: 450;
      padding: 0px 20px 14px 20px;
      color: #0d0e0a;
 }
 .about {
-     background: url(../images/about-bg.jpg);
+     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/about-bg.jpg);
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding: 70px 0px 10px 0px;
@@ -1704,15 +1713,17 @@ input[type="radio"] .styled:checked+label::after {
 }
 .about-box .titlepage {
      text-align: right;
+     color: #000;
 }
 .about-box .titlepage h2 {
      padding: 0px 0px 36px 0px;
      font-size: 50px;
      font-weight: bold;
-     color: #fff;
+     color: #01b339;
      line-height: 50px;
      position: relative;
      margin-bottom: 20px;
+     text-shadow: 2px 2px 8px #000000;
 }
 .about-box .titlepage h2::after {
      content: "";
@@ -1721,21 +1732,27 @@ input[type="radio"] .styled:checked+label::after {
      top: 70%;
      margin: 10px auto;
      height: 6px;
-     background: #fff;
-     width: 45%;
-     right: -295px;
+     background: #008104;
+     width: 75%;
+     right: -29px;
 }
 .about-box .titlepage span {
-     color: #fff;
-     font-size: 17px;
+     color: #ffffff;
+     font-size: 20px;
      line-height: 32px;
      display: block;
+     text-shadow: 6px 6px 24px #000000, 0 0 16px #222;
+     text-align: center;
 }
+.about-box .titlepage .read-more {
+     text-align: center;
+}
+
 .about-box .titlepage .read-more a {
      font-size: 17px;
      padding: 15px 60px;
-     background-color: #fff;
-     color: #000;
+     background-color: #26820a;
+     color: #fff;
      display: inline-block;
      line-height: 20px;
      border-radius: 5px;
@@ -1743,58 +1760,13 @@ input[type="radio"] .styled:checked+label::after {
      margin-top: 30px;
 }
 .about-box .titlepage .read-more a:hover {
-     background-color: #000;
+     background-color: #084110;
      color: #fff;
-}
-.Gallery {
-     margin-top: 90px;
-}
-.Gallery .Gallery-box {
-     margin-bottom: 15px;
-     margin-right: -7px;
-     margin-left: -7px;
-     position: relative;
-}
-.Gallery .Gallery-box figure {
-     margin: 0px;
-}
-.Gallery .Gallery-box figure img {
-     width: 100%;
-}
-.green {
-     background-color: #6fb936;
-}
-
-/** gallery section css **/
-#demo {
-     height: 100%;
-     position: relative;
-     overflow: hidden;
-}
-.green {
-     background-color: #6fb936;
-}
-.page-top {
-     margin-top: 85px;
-}
-
-.transition {
-     -webkit-transform: scale(1.2);
-     -moz-transform: scale(1.2);
-     -o-transform: scale(1.2);
-     transform: scale(1.2);
-}
-.modal-header {
-     border-bottom: none;
-}
-.modal-title {
-     color: #000;
-}
-.modal-footer {
-     display: none;
 }
 
 /** end section **/
+/** GALERIA **/
+
 .margin-r-l {
      padding-right: 40px;
      padding-left: 40px;
@@ -1807,10 +1779,10 @@ input[type="radio"] .styled:checked+label::after {
      padding-bottom: 50px;
 }
 .Gallery .titlepage h2 {
-     padding: 0px 0px 36px 0px;
+     padding: 150px 0px 36px 0px;
      font-size: 50px;
      font-weight: bold;
-     color: #050303;
+     color: #074f28;
      line-height: 50px;
      position: relative;
      margin-bottom: 20px;
@@ -1821,29 +1793,24 @@ input[type="radio"] .styled:checked+label::after {
      left: 0;
      right: 0;
      top: 70%;
-     margin: 10px auto;
-     width: 283px;
+     margin: 60px auto;
+     width: 550px;
      height: 6px;
      background: #308409;
 }
-.Gallery .Gallery-box:hover .hoverle {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     text-align: center;
-     display: flex;
-     justify-content: center;
-     background: #308409de;
-     align-items: center;
+.img-fluid {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     height: auto;
+     border-radius: 5%; /* Bordes circulares en las 4 esquinas */
+     box-sizing: border-box;
 }
-.Gallery .Gallery-box:hover .hoverle a {
-     border: #fff solid 2px;
-     background: transparent;
-     padding: 5px 38px;
-     color: #fff;
-}
+
+/** end section **/
+
+
 .contact {
      background: #fff;
      padding-top: 90px;
@@ -2034,6 +2001,34 @@ ul.location_icon span {
 }
 
 /*--------------------------------------------------------------------- inner_page css ---------------------------------------------------------------------*/
+.container-about {
+     display: flex;
+     flex-direction: column;
+     height: 400px; /* Asegura espacio para la animación */
+     overflow: hidden;
+}
+.container-about div {
+     flex-grow: 1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 2em;
+     transition: flex-grow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+     background: #034703c5;
+     color: #ffffff;
+     cursor: pointer;
+     text-shadow: 2px 2px 8px #000, 0 0 4px #222;
+}
+.container-about div:hover {
+     flex-grow: 5;
+     background: #08801e;
+     color: #ffffff;
+     z-index: 1;
+     text-shadow: 3px 3px 12px #000, 0 0 8px #222;
+}
+
+
+
 .about_page .about {
      margin-bottom: 90px;
 }
@@ -2043,12 +2038,13 @@ ul.location_icon span {
 }
 .Books-bg .titlepage {
      margin-top: 90px;
+     color:rgba(0, 60, 40, 0.491);
 }
 .Books-bg .read-more {
      margin-bottom: 90px;
 }
 .about-bg .abouttitle h2 {
-     color: #fff;
+     color: #ffffff;
      text-transform: uppercase;
      font-size: 40px;
      line-height: 45px;
@@ -2067,32 +2063,100 @@ ul.location_icon span {
 .carousel-control-prev {
      left: inherit;
 }
-#main_slider .carousel-control-prev,
-#main_slider .carousel-control-next {
-     width: 55px;
-     height: 55px;
-     background: #e0e5e5;
-     opacity: 1;
-     font-size: 30px;
-     color: #000;
-     border-radius: 30px;
+.carousel-control-next {
+     left: inherit;
 }
-#main_slider .carousel-control-prev:hover,
-#main_slider .carousel-control-next:hover,
-#main_slider .carousel-control-prev:focus,
-#main_slider .carousel-control-next:focus {
-     background: #308409;
-     color: #fff;
+
+.carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-10%);
+    transform: translateX(-50%);
+    background-color: #008a00bb; /* Fondo negro */
+    border: 2px solid #008a00bb; /* Borde verde */
+    border-radius: 50%;
+    opacity: 1;
+    display: center;
+    align-items: center;
+    justify-content: center;
 }
-#main_slider a.carousel-control-prev {
-     position: absolute;
-     right: 82px;
-     bottom: 10px;
-     top: inherit;
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-10%);
+    transform: translateX(50%);
+    background-color: #008a00bb; /* Fondo negro */
+    border: 2px solid #008a00bb; /* Borde verde */
+    border-radius: 50%;
+    opacity: 1;
+    display: center;
+    align-items: center;
+    justify-content: center;
 }
-#main_slider a.carousel-control-next {
-     position: absolute;
-     right: 40px;
-     top: inherit;
-     bottom: 10px;
+
+
+
+.carousel-control-prev:hover{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-10%);
+    transform: translateX(-50%);
+    background-color: #004100; /* Fondo negro */
+    border: 2px solid #004100; /* Borde verde */
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-control-next:hover{
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-10%);
+    transform: translateX(50%);
+    background-color: #004100; /* Fondo negro */
+    border: 2px solid #004100; /* Borde verde */
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border: none;
+    position: relative;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 2px;
+    border: solid #ffffff; /* Flecha verde */
+    border-width: 0 6px 6px 0;
+    padding: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.carousel-control-prev-icon::before {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel-control-next-icon::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
