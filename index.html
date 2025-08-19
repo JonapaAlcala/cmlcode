@@ -173,7 +173,7 @@
 
 
       <!-- ACERCA DE NOSOTROS -->
-      <div id="about" class="about">
+      <div id="about" class="about" >
          <div class="container">
             <div class="row">
                
@@ -226,26 +226,39 @@
             </div>
          </div>
          <div class="gallery-slider" style="display: flex; align-items: flex-start; justify-content: center; gap: 40px; margin-top: 40px;">
-            <!-- Miniaturas -->
-            <div class="gallery-thumbs" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
-               <div class="gallery-thumb active" data-index="0" style="cursor:pointer;">
-                  <img src="images/1.jpg" alt="Proyecto 1" style="width:120px; height:80px; object-fit:cover; border-radius:8px; transition:all 0.3s;">
+            <!-- Thumbnails -->
+            <div class="gallery-thumbs" style="display: flex; flex-direction: column; align-items: center; gap: 16px; margin-right: 40px;">
+               <div class="gallery-thumb active" data-index="0">
+                  <img src="images/imagen1.jpg" alt="Proyecto 1" style="width:120px; height:80px; object-fit:cover; border-radius:6px; cursor:pointer;">
                </div>
-               <div class="gallery-thumb" data-index="1" style="cursor:pointer; opacity:0.5;">
-                  <img src="images/2.jpg" alt="Proyecto 2" style="width:80px; height:60px; object-fit:cover; border-radius:8px; transition:all 0.3s;">
+               <div class="gallery-thumb" data-index="1">
+                  <img src="images/imagen2.jpg" alt="Proyecto 2" style="width:80px; height:60px; object-fit:cover; border-radius:6px; cursor:pointer;">
+               </div>
+               <div class="gallery-thumb" data-index="2">
+                  <img src="images/imagen3.jpg" alt="Proyecto 3" style="width:80px; height:60px; object-fit:cover; border-radius:6px; cursor:pointer;">
                </div>
             </div>
-            <!-- Detalle del proyecto -->
-            <div class="gallery-details" style="display: flex; flex-direction: column; align-items: center; min-width:400px;">
-               <div class="gallery-detail" data-index="0" style="display:block; text-align:center; margin-top:0;">
-                  <h2>Proyecto 1</h2>
-                  <img src="images/1.jpg" alt="Proyecto 1" style="width:350px; height:220px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:16px;">
-                  <p>Descripción del Proyecto 1: Sitio web moderno y responsivo para empresa local. Incluye panel de administración y catálogo de productos.</p>
+            <!-- Imagen grande, título y descripción -->
+            <div class="gallery-details" style="display: flex; flex-direction: column; align-items: flex-start; min-width:600px; max-width:600px; min-height:340px; justify-content:center; box-sizing:border-box;">
+               <div class="gallery-detail" data-index="0" style="display:block; width:100%;">
+                  <img src="images/imagen1.jpg" alt="Proyecto 1" style="width:100%; max-width:580px; height:320px; object-fit:cover; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.12); margin-bottom:24px;">
+                  <h2 style="font-size:2rem; margin-bottom:10px;">Proyecto 1</h2>
+                  <p style="font-size:1.1rem;">Sitio web moderno y responsivo para empresa local. Incluye panel de administración y catálogo de productos.</p>
+                  <a href="#" class="btn btn-primary" style="margin-top:12px;">Ver más</a>
+
                </div>
-               <div class="gallery-detail" data-index="1" style="display:none; text-align:center; margin-top:0;">
-                  <h2>Proyecto 2</h2>
-                  <img src="images/2.jpg" alt="Proyecto 2" style="width:350px; height:220px; object-fit:cover; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:16px;">
-                  <p>Descripción del Proyecto 2: Aplicación móvil para gestión de clientes y ventas, disponible para Android y iOS.</p>
+               <div class="gallery-detail" data-index="1" style="display:none; width:100%;">
+                  <img src="images/imagen2.jpg" alt="Proyecto 2" style="width:100%; max-width:580px; height:320px; object-fit:cover; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.12); margin-bottom:24px;">
+                  <h2 style="font-size:2rem; margin-bottom:10px;">Proyecto 2</h2>
+                  <p style="font-size:1.1rem;">Aplicación móvil para gestión de clientes y ventas, disponible para Android y iOS
+                     Aplicación móvil para gestión de clientes y ventas, disponible para Android y iOS..</p>
+               </div>
+               <div class="gallery-detail" data-index="2" style="display:none; width:100%;">
+                  <img src="images/imagen3.jpg" alt="Proyecto 3" style="width:100%; max-width:580px; height:320px; object-fit:cover; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.12); margin-bottom:24px;">
+                  <h2 style="font-size:2rem; margin-bottom:10px;">Proyecto 3</h2>
+                  <p style="font-size:1.1rem;">Aplicación móvil para gestión de clientes y ventas, disponible para Android y iOS.
+                     Aplicación móvil para gestión de clientes y ventas, disponible para Android y iOS.
+                  </p>
                </div>
             </div>
             <!-- Botón siguiente -->
@@ -254,6 +267,33 @@
             </button>
          </div>
          <style>
+            .gallery-slider {
+               min-height: 340px;
+            }
+            .gallery-details {
+               min-width: 600px;
+               max-width: 600px;
+               min-height: 340px;
+               box-sizing: border-box;
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+               justify-content: center;
+            }
+            .gallery-detail {
+               width: 100%;
+               min-height: 340px;
+               display: none;
+               text-align: left;
+               margin-top: 0;
+               box-sizing: border-box;
+               justify-content: flex-start;
+               align-items: flex-start;
+               flex-direction: column;
+            }
+            .gallery-detail[style*="display:block"] {
+               display: flex !important;
+            }
             .gallery-thumb.active img {
                width:120px !important;
                height:80px !important;
@@ -276,7 +316,7 @@
 
       
       <!--contact -->
-      <div id="contact" class="contact">
+      <div id="contact" class="contact" style="padding-top:150px; margin-bottom: 50px;">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -285,47 +325,55 @@
                   </div>
                </div>
             </div>
-            <div class="row">
-               <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 paddimg-right">
-                  <div class="row">
-                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                        <form>
-                           <div class="row">
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <input class="form-control" placeholder="Name" type="text" name="Name">
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <input class="form-control" placeholder="Email" type="text" name="Email">
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <textarea class="form-control" placeholder="Message" name="Message"></textarea>
-                              </div>
-                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                 <a href="#">Read More</a>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
+
+            <!-- Fila con dos columnas: contacto (izquierda) y formulario (derecha) -->
+            <div class="row align-items-start">
+               <!-- Información básica de contacto (izquierda) -->
+               <div class="col-md-5 col-sm-12 paddimg-left" style="display:flex; flex-direction:column; gap:24px;">
+                  <div style="display:flex; align-items:center; gap:12px;">
+                     <img src="images/phone-call.png" alt="Teléfono" style="width:32px; height:32px;">
+                     <span style="font-size:1.2rem;">+52 961 335 498 0</span>
                   </div>
+                  <div style="display:flex; align-items:center; gap:12px;">
+                     <img src="images/email.png" alt="Email" style="width:32px; height:32px;">
+                     <span style="font-size:1.2rem;">cmlcode@gmail.com</span>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:12px;">
+                     <img src="images/location.png" alt="Ubicación" style="width:32px; height:32px;">
+                     <span style="font-size:1.2rem;">Tuxtla Gutiérrez, Chiapas</span>
+                  </div>
+                  <a href="https://wa.me/529613354980" target="_blank" class="btn btn-success" style="display:flex; align-items:center; gap:8px; font-size:1.1rem;">
+                     <img src="images/whatsapp.png" alt="WhatsApp" style="width:24px; height:24px;">
+                     WhatsApp
+                  </a>
                </div>
-               <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 paddimg-left">
-                  <div class="Nursery-img">
-                     <figure>
-                        <img src="images/contactimg.jpg" alt="img"/>
-                        <div class="text-box">
-                           <h3>Best Green Nursery</h3>
+
+               <!-- Formulario (derecha) -->
+               <div class="col-md-7 col-sm-12 paddimg-right">
+                  <form>
+                     <div class="row">
+                        <div class="col-12">
+                           <input class="form-control" placeholder="Nombre" type="text" name="Name">
                         </div>
-                     </figure>
-                  </div>
+                        <div class="col-12">
+                           <input class="form-control" placeholder="Email" type="email" name="Email">
+                        </div>
+                        <div class="col-12">
+                           <input class="form-control" placeholder="Teléfono" type="text" name="Phone">
+                        </div>
+                        <div class="col-12">
+                           <textarea class="form-control" placeholder="Mensaje" name="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                           <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
       </div>
       <!-- end contact -->
-
 
       <!-- footer -->
       <footer>
